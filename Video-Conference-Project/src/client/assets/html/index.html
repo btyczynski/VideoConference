@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>PT PUT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+</head>
+
+<body class="page-wrapper" id="page">
+	<canvas class="page-bg"></canvas>
+
+
+	<div id="loginSplash" class="container page-container d-flex">
+		<div class="align-self-center">
+			<div class="welcome">
+				<h1>Video Game Room v.1</h1>
+				<p>Enter your username in input below.</p>
+				<p class="pt-3 form-inline">
+					<input class="form-control form-control-md input-nick" type="text" placeholder="Your nick" id="input-username">
+					<button type="button" class="btn ml-2 btn-md" id="btn-join">Join</button>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="waitingSplash" class="container page-container d-flex" style="display: none !important;">
+		<div class="align-self-center">
+			<div class="welcome">
+				<h1>Looking for a partner</h1>
+				<p>Please wait...</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="partnerSplash" class="container page-container d-flex" style="display: none !important;">
+		<div class="align-self-center">
+			<div class="welcome">
+				<div id="videoInSplash">
+
+				</div>
+				<h1>Connected</h1>
+				<p>Say hello to your game partner</p>
+				<p class="pt-3">
+					<button type="button" class="btn btn-md btn-primary" id="btn-ready">I am ready</button>
+					<button type="button" class="btn ml-2 btn-md" id="btn-abandon">Search another partner</button>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="gameSplash" class="container page-container d-flex" style="display: none !important;">
+		<div class="align-self-center">
+			<div id="gamediv"></div>
+		</div>
+	</div>
+
+	<div id="videoInGame" class="video-off">
+		<div class="video-wrapper mb-2" id="videoWrapper">
+			<video id="localVideo" class="local-video" autoplay muted></video>
+			<video id="remoteVideo" class="remote-video" autoplay></video>
+		</div>
+	</div>
+
+	<script src="client.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+</body>
+
+</html>
